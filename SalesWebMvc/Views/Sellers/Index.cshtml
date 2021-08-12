@@ -4,17 +4,22 @@
     ViewData["Title"] = "Index";
 }
 <h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-default">Create new</a>
+</p>
+
 <table class="table table-striped table-hover">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <thDisplayNameFor
+            <th>
                 @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BithDate)
+                @Html.DisplayNameFor(model => model.BirthDate)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.BaseSalary)
@@ -32,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BithDate)
+                @Html.DisplayFor(modelItem => item.BirthDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.BaseSalary)
